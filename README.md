@@ -20,6 +20,27 @@ run the following command to fetch the data from the based on start date, the du
 mysql scripts
 -------------------------------
 
+>DROP TABLE IF EXISTS `eshdb`.`logdata`;
+CREATE TABLE  `eshdb`.`logdata` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `ip` varchar(45) DEFAULT NULL,
+  `log_date` datetime DEFAULT NULL,
+  `request` varchar(45) DEFAULT NULL,
+  `status` int(10) unsigned DEFAULT NULL,
+  `user_agent` varchar(400) DEFAULT NULL,
+  `remarks` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=116337 DEFAULT CHARSET=latin1;
+
+
+>DROP TABLE IF EXISTS `eshdb`.`errorlog`;
+CREATE TABLE  `eshdb`.`errorlog` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `ip` varchar(45) NOT NULL DEFAULT '',
+  `remarks` varchar(45) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 #### select count(ip),ip from logdata where log_date between '2017-01-01 13:00:00' and '2017-01-01 14:00:00' group by ip having count(ip) > 100;
 
 #### select * from logdata where ip='192.168.228.188';
