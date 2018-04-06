@@ -1,8 +1,9 @@
 # LogParser
-Parser to parse the log file and store the data in database
+Parser to parse the log file and store the data in database. 
+Uses Spring task executor to insert data in batches that help in insertions faster.
 
 
-run the following command to build the project / jar
+run the following command to build the project that creates logparser-0.0.1.jar
 
 #### mvn clean install -U
 
