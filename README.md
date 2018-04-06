@@ -6,7 +6,8 @@ run the following command to build the project / jar
 
 #### mvn clean install -U
 
-run the following command to save the data initially
+Copy the jar file and access.log file in the same directory
+run the following command to save the data to database initially
 
 #### java -jar logparser-0.0.1 
 
