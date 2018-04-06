@@ -19,6 +19,7 @@ run the following command to fetch the data from the based on start date, the du
 
 mysql scripts
 -------------------------------
+table: **logdata**
 
 >DROP TABLE IF EXISTS `eshdb`.`logdata`;
 CREATE TABLE  `eshdb`.`logdata` (
@@ -32,6 +33,7 @@ CREATE TABLE  `eshdb`.`logdata` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=116337 DEFAULT CHARSET=latin1;
 
+table: **errorlog**
 
 >DROP TABLE IF EXISTS `eshdb`.`errorlog`;
 CREATE TABLE  `eshdb`.`errorlog` (
