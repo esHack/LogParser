@@ -4,7 +4,7 @@ Parser to parse the log file and store the data in database
 
 run the following command to build the project / jar
 
-### mvn clean install -U
+#### mvn clean install -U
 
 run the following command to save the data initially
 
