@@ -16,8 +16,8 @@ run the following command to fetch the data from the based on start date, the du
 #### java -jar logparser-0.0.1 --startDate=2017-01-01.13:00:00 --duration=hourly --threshold=100
 
 
-
-my sql scripts
+mysql scripts
+-------------------------------
 
 #### select count(ip),ip from logdata where log_date between '2017-01-01 13:00:00' and '2017-01-01 14:00:00' group by ip having count(ip) > 100;
 
