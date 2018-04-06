@@ -16,4 +16,8 @@ run the following command to fetch the data from the based on start date, the du
 
 
 
+my sql scripts
 
+#### select count(ip),ip from logdata where log_date between '2017-01-01 13:00:00' and '2017-01-01 14:00:00' group by ip having count(ip) > 100;
+
+#### select * from logdata where ip='192.168.228.188';
